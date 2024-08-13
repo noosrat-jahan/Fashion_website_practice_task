@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lobster&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lobster&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lobster&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+*{
+    margin: 0 ;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+button{
+    cursor: pointer;
+}
+
+/* header section style start here */
+header{
+    width: 100%;
+    margin: 0 auto;
+    background-color: rgb(253, 244, 219);
+}
+
+
+nav{
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 30px;
+}
+
+nav div{
+    display: flex;
+    align-items: center;
+}
+
+nav h2{
+    font-family: "Montserrat", sans-serif;
+    margin-left: 15px;
+    color: rgb(54, 57, 88);
+}
+
+nav a{
+    font-family: "Roboto", sans-serif; 
+    font-weight: 500;
+    text-decoration: none;
+    color: black;
+    margin-right: 30px;
+}
+
+.nav_rect{
+    position: absolute;
+    width: 100px;
+    left: 450px;
+    top: -30px;
+}
+
+.bar_icon{
+    display: none;
+}
+
+.banner{
+    width: 85%;
+    margin: 0 auto;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 100px;
+    padding-bottom: 100px;
+}
+
+.banner div{
+    width: 50%;
+    position: relative;
+}
+
+.banner_img_bg{
+    width: 80%;
+}
+
+.banner_img{
+    position: absolute;
+    right: 19%;
+    bottom: 1%;
+    width: 78%;
+}
+
+.banner h1{
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 4rem;
+    font-weight: 500;
+    line-height: 65px;
+}
+
+.banner p{
+    font-family: "Roboto", sans-serif;
+    font-size: 0.8rem;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.be_the-peng{
+    color: rgb(250, 190, 76);
+}
+
+.buy_now_btn{
+    color: #fff;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(180.00deg, rgb(164, 188, 70),rgb(133, 160, 25) 100%);
+}
+
+.two{
+    background: rgb(42, 30, 89);
+}
+
+.three{
+    background: linear-gradient(180.00deg, rgb(61, 79, 243),rgb(53, 67, 188) 100%);
+}
+/* jacket section style start here */
+
+.jacket_section, .backpack_section{
+    width: 85%;
+    margin: 0 auto;
+    margin-top: 50px;
+    
+}
+
+.jacket_section h2 , .backpack_section h2{
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 2.5rem;
+    font-weight: 400;
+}
+
+.jacket_container, .backpack_container, .shoe_container{
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 20px;
+    row-gap: 100px;
+    font-family: "Roboto", sans-serif;
+}
+
+.jacket_details, .backpack_details{
+    box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.05);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;   
+}
+
+.jacket_container img , .backpack_container img{
+    width: 320px;
+    height: 370px;
+    background-color: rgb(241, 241, 241);
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.jacket_details div, .backpack_details div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.jacket_details h4{
+    font-size: 2rem;
+    color: rgb(250, 190, 76);
+}
+
+.backpack_details h4{
+    font-size: 2rem;
+    color: rgb(118, 194, 126);
+}
+
+
+.jacket_details p, .backpack_details p{
+    font-size: 0.8rem;
+}
+
+
+
+/* order and delivery section style start here */
+
+.order_and_delivery{
+    width: 85%;
+    margin: 0 auto;
+    margin-top: 100px;
+    margin-bottom: 200px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 50px;
+}
+
+.card{
+    box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.05);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+}
+
+.card p{
+    font-size: 0.8rem;
+    margin-top: 10px;
+}
+
+.card img{
+    width: 15%;
+}
+
+.delivery_img{
+    width: 100%;
+}
+
+
+/* responsive design for mobile device */
+
+@media screen and (max-width:576px){
+    .bar_icon{
+        display: block;
+    }
+    .nav_menu{
+        display: none;
+    }
+
+    .nav_rect{
+        position: absolute;
+        width: 80px;
+        left: 300px;
+        top: -40px;
+    }
+
+    .banner{
+        flex-direction: column-reverse;
+    }
+
+    .banner div{
+        width: 90%;
+    }
+
+    .banner_img_bg{
+        width: 90%;
+    }
+
+    .jacket_container, .backpack_container, .order_and_delivery{
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 40px;
+    }
+}
